@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../fonts/BYekan-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/big-back.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+* {
+    font-family: "BYekan";
+    direction: rtl;
+    text-align: right;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.form_date_picker .date_picker {
+    position: absolute;
+    bottom: 0;
+    height: 38px;
+    background: #ffffff;
+    border-radius: 0.375rem;
+    z-index: 1;
+    border: 1px solid #e2e3e5;
+}
+
+.date_picker select {
+    border: unset;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    text-align: center;
+}
+
+.form_box {
+    border-radius: 0.5rem;
+    min-height: 50vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 30px rgba(128, 128, 128, 0.219);
+}
+
+input[disabled] {
+    pointer-events: none;
+}
